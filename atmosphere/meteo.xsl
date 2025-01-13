@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
-    <xsl:variable name="currentDate" select="'2025-01-13'"/>
+    <xsl:param name="currentDate" />
 
     <xsl:template match="/">
         <html>

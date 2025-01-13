@@ -2,18 +2,30 @@
 // Géolocalisation via IP
 $ip = $_SERVER['REMOTE_ADDR']; // Adresse IP du client
 $geoApiUrl = "http://ip-api.com/json/$ip";
-$geoContent = file_get_contents($geoApiUrl);
-$geoData = json_decode($geoContent, true);
 
-if ($geoData['status'] === 'success') {
-    $lat = $geoData['lat'];
-    $lon = $geoData['lon'];
-    $city = $geoData['city'];
-} else {
-    // Coordonnées de secours (Nancy - IUT Charlemagne)
-    $lat = 48.67103;
-    $lon = 6.15083;
-    $city = "Nancy";
+// Définitions par défaut (Nancy - IUT Charlemagne)
+$lat = 48.67103;
+$lon = 6.15083;
+$city = "Nancy";
+
+try {
+    $geoContent = @file_get_contents($geoApiUrl); // Utilisation de '@' pour éviter les warnings
+    if ($geoContent === false) {
+        throw new Exception("Erreur lors de la récupération des données de géolocalisation.");
+    }
+
+    $geoData = json_decode($geoContent, true);
+
+    if (isset($geoData['status']) && $geoData['status'] === 'success') {
+        $lat = $geoData['lat'];
+        $lon = $geoData['lon'];
+        $city = $geoData['city'];
+    } else {
+        throw new Exception("Statut de géolocalisation non valide.");
+    }
+} catch (Exception $e) {
+    // Si une exception est levée, on utilise les coordonnées par défaut
+    error_log("Erreur de géolocalisation : " . $e->getMessage());
 }
 
 // Récupération des données météo
@@ -22,7 +34,7 @@ $context = stream_context_create([
     'http' => ['proxy' => 'www-cache:3128', 'request_fulluri' => true],
     'ssl' => ['verify_peer' => false, 'verify_peer_name' => false],
 ]);
-$xmlContent = file_get_contents($xmlUrl);
+$xmlContent = file_get_contents($xmlUrl, false, $context);
 if ($xmlContent === false) {
     $weatherHtml = '<p>Erreur lors de la récupération des données météo.</p>';
 } else {
@@ -38,6 +50,9 @@ if ($xmlContent === false) {
         $XSLTProcess->load('./atmosphere/meteo.xsl');
         $xslt->importStylesheet($XSLTProcess);
 
+        $currentDate = date('Y-m-d');
+        $xslt->setParameter('', 'currentDate', $currentDate);
+
         $weatherHtml = $xslt->transformToXML($XML);
         if ($weatherHtml === false) {
             $weatherHtml = '<p>Erreur lors de la transformation XSLT.</p>';
@@ -48,7 +63,7 @@ if ($xmlContent === false) {
 
 // Qualité de l'air
 $airQualityApiUrl = "https://services3.arcgis.com/Is0UwT37raQYl9Jj/arcgis/rest/services/ind_grandest/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=true&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="; // URL raccourcie pour clarté
-$airQualityContent = file_get_contents($airQualityApiUrl);
+$airQualityContent = file_get_contents($airQualityApiUrl, false, $context);
 $airQualityData = json_decode($airQualityContent, true);
 
 if (!empty($airQualityData)) {
@@ -96,6 +111,7 @@ if (!empty($airQualityData)) {
 <footer>
     <h3>Liens des APIs utilisées :</h3>
     <ul>
+        <li>Github: <a href="https://github.com/TyrYoxan/Interop" target="_blank">Projet</a></li>
         <li><a href="http://ip-api.com/">API Géolocalisation</a></li>
         <li><a href="https://www.infoclimat.fr/public-api/gfs/xml">API Météo</a></li>
         <li><a href="https://api.données-grandnancy.com/traffic.json">API Trafic</a></li>

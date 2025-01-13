@@ -187,10 +187,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-// Exemple d'utilisation
-    loadCovidData();
-
-
     // Disponibilités des vélos
     const loadBikeData = (map, latitude, longitude) => {
         // URLs des API
@@ -256,6 +252,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Météo
     const loadWeather = (latitude, longitude) => {
+        // Générer la date du jour au format ISO (YYYY-MM-DD)
+        const today = new Date().toISOString().split('T')[0];
+
         fetch('./atmosphere/meteo.xsl') // Assurez-vous que ce fichier XSL est disponible au bon emplacement
             .then(response => response.text())
             .then(xsltText => {
@@ -265,6 +264,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const parser = new DOMParser();
                 const xsltDoc = parser.parseFromString(xsltText, 'application/xml');
                 xsltProcessor.importStylesheet(xsltDoc);
+
+                // Passer la date en paramètre au XSLT
+                xsltProcessor.setParameter(null, 'currentDate', today);
 
                 // Charger les données météo
                 return fetch(`${apiUrls.meteo}${latitude},${longitude}&_auth=ARsDFFIsBCZRfFtsD3lSe1Q8ADUPeVRzBHgFZgtuAH1UMQNgUTNcPlU5VClSfVZkUn8AYVxmVW0Eb1I2WylSLgFgA25SNwRuUT1bPw83UnlUeAB9DzFUcwR4BWMLYwBhVCkDb1EzXCBVOFQoUmNWZlJnAH9cfFVsBGRSPVs1UjEBZwNkUjIEYVE6WyYPIFJjVGUAZg9mVD4EbwVhCzMAMFQzA2JRMlw5VThUKFJiVmtSZQBpXGtVbwRlUjVbKVIuARsDFFIsBCZRfFtsD3lSe1QyAD4PZA%3D%3D&_c=19f3aa7d766b6ba91191c8be71dd1ab2`)
@@ -287,8 +289,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
             })
             .catch(error => console.error("Erreur lors du chargement des données ou XSLT :", error));
-
     };
+
 
     addResourceLinks();
 });
