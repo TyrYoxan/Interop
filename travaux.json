@@ -1,0 +1,365 @@
+{
+    "incidents": [
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chauffage urbain - Voirie: Suppression d'un sens de circulation (Rue en sens unique), Stationnement interdit *** Délestage-Déviat°: Déviation avenue de la Garenne",
+            "short_description": "Chauffage urbain - Voirie",
+            "starttime": "2025-01-27T00:00:00",
+            "endtime": "2025-02-28T00:00:00",
+            "location": {
+                "street": "Avenue du Général Leclerc",
+                "polyline": "48.67955537311781 6.180905002773538",
+                "location_description": "AVENUE GÉNÉRAL LECLERC, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-20T10:01:03.055597",
+            "creationtime": "2024-12-20T10:01:03.055591",
+            "id": "FrMdGN54200022"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chauffage urbain - Voirie: Rue barrée, Stationnement interdit, Rue barrée, sauf riverains",
+            "short_description": "Chauffage urbain - Voirie",
+            "starttime": "2025-01-13T00:00:00",
+            "endtime": "2025-02-13T00:00:00",
+            "location": {
+                "street": "Allée de Saurupt",
+                "polyline": "48.68014283782589 6.182264491691713",
+                "location_description": "ALLÉE DE SAURUPT, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-20T10:01:03.130690",
+            "creationtime": "2024-12-20T10:01:03.130679",
+            "id": "FrMdGN54200023"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chauffage urbain - Voirie: Rue barrée, sauf riverains",
+            "short_description": "Chauffage urbain - Voirie",
+            "starttime": "2025-02-03T00:00:00",
+            "endtime": "2025-03-28T00:00:00",
+            "location": {
+                "street": "Rue du Général Balfourier",
+                "polyline": "48.68060859858258 6.181156738877154",
+                "location_description": "RUE GÉNÉRAL BALFOURIER, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-20T10:01:03.220185",
+            "creationtime": "2024-12-20T10:01:03.220174",
+            "id": "FrMdGN54200024"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chauffage urbain - Voirie: Rue barrée, sauf riverains",
+            "short_description": "Chauffage urbain - Voirie",
+            "starttime": "2025-02-04T00:00:00",
+            "endtime": "2025-03-29T00:00:00",
+            "location": {
+                "street": "Avenue de la Garenne",
+                "polyline": "48.680867156074754 6.1798853719583065",
+                "location_description": "AVENUE DE LA GARENNE, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-20T10:01:03.302624",
+            "creationtime": "2024-12-20T10:01:03.302617",
+            "id": "FrMdGN54200025"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Assainissement - Voirie: Circulation alternée, Stationnement interdit",
+            "short_description": "Assainissement - Voirie",
+            "starttime": "2024-10-07T00:00:00",
+            "endtime": "2025-02-15T00:00:00",
+            "location": {
+                "street": "Rue du Fonteno",
+                "polyline": "48.66803108958954 6.204411380874156",
+                "location_description": "RUE DU FONTENO, JARVILLE LA MALGRANGE"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-12T10:01:03.392762",
+            "creationtime": "2024-04-04T10:01:03.818252",
+            "id": "FrMdGN54184022"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Assainissement - Voirie: Circulation alternée",
+            "short_description": "Assainissement - Voirie",
+            "starttime": "2024-11-18T00:00:00",
+            "endtime": "2025-02-01T00:00:00",
+            "location": {
+                "street": "Le Bourgarel",
+                "polyline": "48.72387076803688 6.1766468441146865",
+                "location_description": "AVENUE DU MARÉCHAL DE LATTRE DE TASSIGNY, MALZEVILLE"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-12T10:01:03.464017",
+            "creationtime": "2024-11-28T09:01:04.305160",
+            "id": "FrMdGN54199064"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Assainissement - Voirie: Rue barrée, Stationnement interdit",
+            "short_description": "Assainissement - Voirie",
+            "starttime": "2024-10-21T00:00:00",
+            "endtime": "2025-03-15T00:00:00",
+            "location": {
+                "street": "Rue Jacques Callot",
+                "polyline": "48.66476812528003 6.161708392118953",
+                "location_description": "RUE JACQUES CALLOT, VANDOEUVRE LES NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-12T10:01:03.553344",
+            "creationtime": "2024-09-06T16:01:03.581901",
+            "id": "FrMdGN54194587"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Assainissement - Voirie: Rue barrée, sauf riverains, Stationnement interdit",
+            "short_description": "Assainissement - Voirie",
+            "starttime": "2024-10-21T00:00:00",
+            "endtime": "2025-03-15T00:00:00",
+            "location": {
+                "street": "Avenue du Vieux Château",
+                "polyline": "48.66370875684883 6.162083900826658",
+                "location_description": "AVENUE DU VIEUX CHÂTEAU, VANDOEUVRE LES NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-12T10:01:03.664429",
+            "creationtime": "2024-09-06T16:01:03.506894",
+            "id": "FrMdGN54194586"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Eau potable et assainissement - Voirie: Rue barrée",
+            "short_description": "Eau potable et assainissement - Voirie",
+            "starttime": "2024-11-04T00:00:00",
+            "endtime": "2025-02-22T00:00:00",
+            "location": {
+                "street": "Rue Édouard Pierson",
+                "polyline": "48.70415570166816 6.17768262270056",
+                "location_description": "PISTE CYCLABLE LE LONG DU CANAL, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-05T11:01:03.976992",
+            "creationtime": "2024-11-07T10:01:02.924735",
+            "id": "FrMdGN54197468"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Eau potable et assainissement - Voirie: Stationnement interdit, Déviation pour les piétons (pas de passage interdit)",
+            "short_description": "Eau potable et assainissement - Voirie",
+            "starttime": "2024-11-04T00:00:00",
+            "endtime": "2025-02-22T00:00:00",
+            "location": {
+                "street": "Rue Charles Keller",
+                "polyline": "48.70408843742641 6.17590431937084",
+                "location_description": "RUE CHARLES KELLER, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-05T11:01:04.056876",
+            "creationtime": "2024-11-07T10:01:02.847167",
+            "id": "FrMdGN54197467"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chantier ponctuel - Voirie: Rue barrée, sauf riverains, Stationnement interdit",
+            "short_description": "Chantier ponctuel - Voirie",
+            "starttime": "2024-09-23T00:00:00",
+            "endtime": "2025-03-24T00:00:00",
+            "location": {
+                "street": "Rue Émile Zola",
+                "polyline": "48.667766105074556 6.195732884114824",
+                "location_description": "RUE EMILE ZOLA, VANDOEUVRE"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-10-14T06:01:02.971926",
+            "creationtime": "2024-09-12T17:01:04.448183",
+            "id": "FrMdGN54195226"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Travaux coordonnés - Voirie: Gêne à la circulation, Stationnement interdit",
+            "short_description": "Travaux coordonnés - Voirie",
+            "starttime": "2024-11-04T00:00:00",
+            "endtime": "2025-02-26T00:00:00",
+            "location": {
+                "street": "Rue de l'Orne",
+                "polyline": "48.69936723613458 6.126417012571826",
+                "location_description": "RUE DE L'ORME, MAXÉVILLE"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-10-07T17:01:04.391212",
+            "creationtime": "2024-10-07T17:01:04.391201",
+            "id": "FrMdGN54195869"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chantier ponctuel - Voirie: Rue barrée *** Délestage-Déviat°: Deviation mise en place par le rond point de la sapinière",
+            "short_description": "Chantier ponctuel - Voirie",
+            "starttime": "2024-11-25T00:00:00",
+            "endtime": "2025-04-30T00:00:00",
+            "location": {
+                "street": "Rue de la Toulose",
+                "polyline": "48.6882403760764 6.131754671073164",
+                "location_description": "RUE DE LA TOULOSE / BRETELLE SAPINIÈRE, LAXOU"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-11-18T17:01:03.460493",
+            "creationtime": "2024-11-18T17:01:03.460479",
+            "id": "FrMdGN54198425"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Travaux coordonnés - Voirie: Circulation et stationnement interdit, sauf riverains, Rue barrée, sauf riverains",
+            "short_description": "Travaux coordonnés - Voirie",
+            "starttime": "2024-07-01T00:00:00",
+            "endtime": "2025-03-30T00:00:00",
+            "location": {
+                "street": "Rue Catherine Opalinska",
+                "polyline": "48.666356291984 6.1958824572725275",
+                "location_description": "RUE OPALISNKA, VANDOEUVRE/ JARVILLE"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-02T11:01:03.214803",
+            "creationtime": "2024-12-02T11:01:03.214793",
+            "id": "FrMdGN54199065"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Eau potable - Voirie: Suppression d'un sens de circulation (Rue en sens unique), Stationnement interdit, Déviation pour les piétons (pas de passage interdit) *** Délestage-Déviat°: sens conservé de Briand à Laxou",
+            "short_description": "Eau potable - Voirie",
+            "starttime": "2025-01-20T00:00:00",
+            "endtime": "2025-03-01T00:00:00",
+            "location": {
+                "street": "Boulevard Charlemagne",
+                "polyline": "48.68407419834178 6.161679512900436",
+                "location_description": "BOULEVARD CHARLEMAGNE, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-11-14T10:01:03.672696",
+            "creationtime": "2024-11-14T10:01:03.672685",
+            "id": "FrMdGN54198102"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Assainissement - Voirie: Circulation alternée",
+            "short_description": "Assainissement - Voirie",
+            "starttime": "2024-10-07T00:00:00",
+            "endtime": "2025-02-15T00:00:00",
+            "location": {
+                "street": "Rue du Moulin",
+                "polyline": "48.66872369652879 6.204819076505083",
+                "location_description": "RUE DU MOULIN, JARVILLE LA MALGRANGE"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2024-12-12T10:01:03.307279",
+            "creationtime": "2024-04-04T10:01:04.109146",
+            "id": "FrMdGN54184023"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chantier ponctuel - Voirie: Gêne à la circulation, Rue barrée",
+            "short_description": "Chantier ponctuel - Voirie",
+            "starttime": "2025-01-10T00:00:00",
+            "endtime": "2025-04-04T00:00:00",
+            "location": {
+                "street": "Boulevard Joffre",
+                "polyline": "48.68909433327384 6.176698988545144",
+                "location_description": "BOULEVARD JOFFRE, NANCY"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2025-01-10T09:01:03.560989",
+            "creationtime": "2025-01-10T09:01:03.560981",
+            "id": "FrMdGN54200345"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chantier ponctuel - Voirie: Rétrécissement des voies, Gêne à la circulation",
+            "short_description": "Chantier ponctuel - Voirie",
+            "starttime": "2025-01-10T00:00:00",
+            "endtime": "2025-03-07T00:00:00",
+            "location": {
+                "street": "Avenue Carnot",
+                "polyline": "48.700602146947126 6.207817476640565",
+                "location_description": "AVENUE CARNOT - DEVANT L'ÉGLISE, SAINT MAX"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2025-01-10T09:01:03.643226",
+            "creationtime": "2025-01-10T09:01:03.643217",
+            "id": "FrMdGN54200342"
+        },
+        {
+            "type": "CONSTRUCTION",
+            "description": "Chantier ponctuel - Voirie: Gêne à la circulation, Réduction à une file de circulation",
+            "short_description": "Chantier ponctuel - Voirie",
+            "starttime": "2025-02-03T00:00:00",
+            "endtime": "2025-04-04T00:00:00",
+            "location": {
+                "street": "Avenue du Bois Gronée",
+                "polyline": "48.68473077426225 6.135246907700726",
+                "location_description": "AVENUE DU BOIS GROSNÉE, LAXOU"
+            },
+            "source": {
+                "name": "Métropole du Grand Nancy",
+                "reference": "Grand_Nancy"
+            },
+            "updatetime": "2025-01-10T09:01:03.721375",
+            "creationtime": "2025-01-10T09:01:03.721367",
+            "id": "FrMdGN54200343"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulation et décisions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+<header>
+    <h1>Circulations - Visualisation en temps réel</h1>
+</header>
+
+<main>
+    <section id="geolocalisation">
+        <h2>Votre position</h2>
+        <p id="location"></p>
+    </section>
+
+    <section id="covid">
+        <h2>Données Covid</h2>
+        <canvas id="covidChart1" width="400" height="200"></canvas>
+        <canvas id="covidChart2" width="400" height="200"></canvas>
+
+    </section>
+
+    <section id="velos">
+        <h2>Disponibilités des vélos</h2>
+        <div id="map" style="height: 400px;"></div>
+    </section>
+
+    <section id="pollution">
+        <h2>Qualité de l'air</h2>
+        <p id="airQuality"></p>
+    </section>
+
+    <section id="meteo">
+        <h2>Météo</h2>
+        <p id="weather"></p>
+    </section>
+</main>
+
+<footer>
+    <h3>Ressources</h3>
+    <ul id="resources"></ul>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
